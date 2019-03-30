@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="144dp"
     android:layout_margin="4dp">
-
+    <!--cardview，自带阴影和圆角，好看；
+    tools命名空间，只在右边preview中有效，用来预览实际效果-->
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

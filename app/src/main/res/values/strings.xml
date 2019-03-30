@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Test</string>
 
+    <!--字符串资源，各种引用-->
+
     <string name="mock_username">username</string>
     <string name="mock_password">password</string>
     <string name="login_title">新维\n单机资讯</string>

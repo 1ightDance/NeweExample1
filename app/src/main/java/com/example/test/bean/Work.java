@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * file description
+ * 数据类，列表中要展示的数据。
  *
  * @author LightDance
  * @date 2019/3/30.
@@ -21,12 +21,18 @@ public class Work {
     private static final String TYPE_BOOK = "书籍";
     private static final String TYPE_MUSIC = "音乐";
 
+    /**作品名*/
     private String title;
+    /**作品类型，见{@link #TYPE_BOOK},{@link #TYPE_GAME},{@link #TYPE_FILM},{@link #TYPE_MUSIC}*/
     private String type;
+    /**描述*/
     private String description;
+    /**评价*/
     private double mark;
+    /**图片资源id，以便将图片加载出来*/
     private int imgId;
 
+    /**构造方法，将值传进来*/
     public Work(String title, String type, String description, double mark, int imgId) {
         this.title = title;
         this.type = type;
@@ -75,6 +81,7 @@ public class Work {
         this.imgId = imgId;
     }
 
+    /**static类型的获取默认数据方式，由于没学数据库和网络编程，先这样*/
     public static List<Work> getDefaultWorks(Context context){
         Resources res = context.getResources();
         List<Work> list = new ArrayList<>();
@@ -89,7 +96,9 @@ public class Work {
         return list;
     }
 
+    /**为了方便加载图片(因为加载图片时需要一个Drawable类型参数，所以加一个辅助方法)*/
     public Drawable getDrawable(Context context){
+        //通过上下文context参数获取app资源Resources，从而能找到放图片文件的地方
         return  context.getResources().getDrawable(getImgId());
     }
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--颜色参数，在https://www.materialpalette.com/deep-purple/lime中可以自己生成一套喜欢的配色方案-->
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#1976D2</color>
+
     <color name="colorAccent">#FF5252</color>
     <color name="colorBtnText">#fff</color>
     <color name="colorSecondText">#757575</color>

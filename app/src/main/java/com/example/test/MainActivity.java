@@ -25,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     //记住密码相关
     private CheckBox mCbRememberPassword;
+
+    /**本地持久化的类，通常记录少量、轻量级的数据*/
     private SharedPreferences pref;
-    private SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**记住密码*/
     private void rememberLoginInfo(String username, String password) {
-        editor=pref.edit();
+        SharedPreferences.Editor editor = pref.edit();
         if(mCbRememberPassword.isChecked())
         {
             //自动填上信息，并勾选CheckBox
