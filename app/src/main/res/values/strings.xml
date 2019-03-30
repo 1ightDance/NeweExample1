@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="mock_username">username</string>
+    <string name="mock_password">password</string>
+    <string name="login_title">新维\n单机资讯</string>
+
+
+    <string name="description_film_1">根据文德琳·范·德拉安南的同名原著小说改编，描述了青春期中男孩女孩之间的有趣战争</string>
+    <string name="description_film_2">一个黑暗到令人窒息的电影,它实在是太悲伤了!</string>
+    <string name="description_film_3">任何地方、任何阵营，都有好人也有坏人，活着真好，以及，男主颜值真高</string>
+</resources>
