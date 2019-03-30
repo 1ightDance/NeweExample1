@@ -55,7 +55,9 @@ public class MainActivity extends AppCompatActivity {
     /**设置监听器*/
     private void setListener() {
         //登录，跳转界面
-        mBtnLogin.setOnClickListener(v -> {
+        //这里使用了lambda表达式，其效果相当于setOnClickListener(new View.OnclickListener(){...}),
+        //目的是想方便阅读
+        mBtnLogin.setOnClickListener((v) -> {
             String username = mUsername.getText().toString();
             String password = mPassword.getText().toString();
             if (username.equals(getResources().getString(R.string.mock_username)) && password.equals(getResources().getString(R.string.mock_password))) {
